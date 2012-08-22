@@ -3,10 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass/";
 
 
 	 body {
-	    background-image:url("../images/Website Backdrop Photo size.jpg");
+	    background-image:image-url("Website Backdrop Photo size.jpg");
 	    background-position:center top;
 		background-repeat:no-repeat;
 		background-color:Dimgrey;
@@ -177,21 +178,13 @@
   	  
   	  
   	  #submitEmail {
-  	    background: #7ec34d; /* Old browsers */
-		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIyOSUiIHN0b3AtY29sb3I9IiM3ZWMzNGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4MyUiIHN0b3AtY29sb3I9IiM0Yjg0MmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-		background: -moz-linear-gradient(top,  #7ec34d 29%, #4b842a 83%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(29%,#7ec34d), color-stop(83%,#4b842a)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #7ec34d 29%,#4b842a 83%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  #7ec34d 29%,#4b842a 83%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  #7ec34d 29%,#4b842a 83%); /* IE10+ */
-		background: linear-gradient(to bottom,  #7ec34d 29%,#4b842a 83%); /* W3C */
+        @include background-image(linear-gradient(#7ec34d 29%,#4b842a 83%));
+        @include border-radius(10px);
   	    width:335px; 
   	    height:45px;
   	    font-size:15px;
   	    font-weight:700;
   	    color:white;
-  	    border-radius:10px;
   	    font-family: arial, sans-serif;
   	    margin-left:30px;
   	  }
